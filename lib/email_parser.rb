@@ -13,8 +13,13 @@ class EmailParser
   end
 
   def parse
-    mail = @emails.select { |mail| mail.include?(",") or mail.include?(" ")}
-    mail
+    if @emails.include?(",") and @emails.include?(" ")
+      mails = @emails.split(" ")
+      mails = @emails.split(",")
+    elsif @emails.include?(" ")
+      mails = @emails.split(" ")
+    end
+    mails
   end
 
 end
