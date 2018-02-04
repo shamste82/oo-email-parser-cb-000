@@ -18,10 +18,10 @@ class EmailParser
     if @emails.include?(", ")
       comma = true
     end
-    if @emails.include?(" ")
+    if !@emails.include?(", ")
       space = true
     end
-    
+
     puts "comma = #{comma}, space = #{space}"
   end
 
