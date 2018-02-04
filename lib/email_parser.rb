@@ -8,7 +8,7 @@ class EmailParser
 
   attr_accessor :emails
 
-  def parse
+  def initialize
     self.emails = mails.split(",")
     emails
   end
