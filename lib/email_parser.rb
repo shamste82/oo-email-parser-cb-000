@@ -26,7 +26,7 @@ class EmailParser
       mails = @emails.split(" ")
     end
 
-    mails
+    mails.uniq
   end
 
 end
