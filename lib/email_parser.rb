@@ -15,9 +15,6 @@ class EmailParser
   def parse
     mail = @emails.select { |mail| mail.include?(",") or mail.include?(" ")}
     mail
-
-
-    mails
   end
 
 end
