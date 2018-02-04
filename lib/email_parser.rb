@@ -25,7 +25,7 @@ class EmailParser
     if !@emails.include?(",")
       mails = @emails.split(" ")
     end
-    
+
     mails.unique
   end
 
