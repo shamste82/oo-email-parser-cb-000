@@ -17,6 +17,7 @@ class EmailParser
     if @emails.include?(",") and @emails.include?(".com ")
        mails = @emails.split(",")
        mails = mails.join("")
+       mails = mails.split(" ")
        puts mails
       # mails = mails.each { |mail| mail.split(" ") }
       return mails
