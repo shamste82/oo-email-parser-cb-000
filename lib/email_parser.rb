@@ -24,7 +24,7 @@ class EmailParser
       mails = @emails.split(", ")
     end
     puts ("#{mails}")
-
+    mails
   end
 
 end
