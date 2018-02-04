@@ -14,6 +14,6 @@ class EmailParser
   end
 
   def initialize
-    parser = EmailParser.new
+    
   end
 end
