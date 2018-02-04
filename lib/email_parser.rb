@@ -21,7 +21,7 @@ class EmailParser
       mails = @emails.split(" ")
     end
     if @emails.include?(",") and @emails.include?(".com ")
-      mails = @emails.split("/[, \s]/")
+      mails = @emails.split("/,\s[\s]/")
     end
     puts ("#{mails}")
     mails
