@@ -15,7 +15,7 @@ class EmailParser
   def parse
     comma = false
     space = false
-    if @emails.include?(", ") and @emails.include?(" ")
+    if @emails.include?(", ") and !@emails.include?(" ")
       comma = true
       space = true
     elsif @emails.include?(" ")
