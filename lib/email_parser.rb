@@ -13,18 +13,19 @@ class EmailParser
   end
 
   def parse
-    comma = false
-    space = false
+    mails = Array.new
     if @emails.include?(",")
-      comma = true
+      mails = @emails.split(", ")
     end
     if !@emails.include?(",")
-      space = true
+      mails = @emails.split(" ")
     end
     if @emails.include?(",") and @emails.include?(".com ")
-      comma = true
-      space = true
+      mails = @emails.split(", ")
+      mails = mails.split(" ")
     end
+
+
 
     puts "comma = #{comma}, space = #{space}"
   end
