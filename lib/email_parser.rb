@@ -14,8 +14,8 @@ class EmailParser
 
   def parse
     if @emails.include?(",") and @emails.include?(" ")
-      mails = @emails.split(" ")
-      mails = mails.split(", ")
+      mails = @emails.split(", ")
+      mails = mails.split(" ")
     elsif @emails.include?(" ")
       mails = @emails.split(" ")
     elsif @emails.include?(",")
