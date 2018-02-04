@@ -6,7 +6,7 @@
 
 class EmailParser
   def parse
-  emails = mails.split(",")
-    emails    
+    emails = mails.split(",")
+    emails
   end
 end
