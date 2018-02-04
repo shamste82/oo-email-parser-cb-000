@@ -13,7 +13,7 @@ class EmailParser
   end
 
   def parse
-    @emails = mails.split(",")
+    @emails = @emails.split(",")
     @emails
   end
 
