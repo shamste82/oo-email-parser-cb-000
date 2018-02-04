@@ -20,8 +20,8 @@ class EmailParser
       mails = @emails.split(",")
     elsif @emails.include?(" ")
       mails = @emails.split(" ")
+    end
+    mails
   end
-
-
 
 end
