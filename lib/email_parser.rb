@@ -24,10 +24,8 @@ class EmailParser
       mails = @emails.split(", ")
       mails = mails.split(" ")
     end
+    mails
 
-
-
-    puts "comma = #{comma}, space = #{space}"
   end
 
 end
