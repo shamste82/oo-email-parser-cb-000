@@ -15,7 +15,8 @@ class EmailParser
   def parse
     mails = Array.new
     if @emails.include?(",") and @emails.include?(".com ")
-      mails = @emails.split(".com ")
+      mails = @emails.split(" ")
+      puts ("#{mails}")
     end
     if @emails.include?(",")
       mails = @emails.split(", ")
