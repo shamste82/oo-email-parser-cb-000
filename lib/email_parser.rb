@@ -21,7 +21,7 @@ class EmailParser
     if !@emails.include?(",")
       space = true
     end
-    if @eails.include?(", ") and @emails.include?(" ")
+    if @eails.include?(",") and @emails.include?(".com ")
       comma = true
       space = true
     end
