@@ -12,4 +12,8 @@ class EmailParser
     emails = mails.split(",")
     emails
   end
+
+  def initialize
+    parser = EmailParser.new
+  end
 end
