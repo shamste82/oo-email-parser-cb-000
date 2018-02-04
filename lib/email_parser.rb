@@ -22,7 +22,7 @@ class EmailParser
     end
     if @emails.include?(",") and @emails.include?(".com ")
       mails = @emails.split(", ")
-      mails = mails.each { |mail| mail.split(" ")}
+      mails = mails.split(" ")
     end
     mails
 
